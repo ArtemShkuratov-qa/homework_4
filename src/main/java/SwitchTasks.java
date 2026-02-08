@@ -15,7 +15,7 @@ public class SwitchTasks {
         //printSystemStatus();
 
         //Проверка метода простой калькуляции
-        //printResult();
+        printResult();
     }
 
     /**
@@ -52,6 +52,8 @@ public class SwitchTasks {
             default:
                 System.out.print("Введен некорректный номер дня");
         }
+
+        scanner.close();
     }
 
     /**
@@ -73,6 +75,8 @@ public class SwitchTasks {
             default:
                 System.out.print("Введен некорректный номер дня");
         }
+
+        scanner.close();
     }
 
     /**
@@ -97,6 +101,8 @@ public class SwitchTasks {
         } else {
             System.out.print("Введена некорректная оценка");
         }
+
+        scanner.close();
     }
 
     /**
@@ -124,6 +130,8 @@ public class SwitchTasks {
             default:
                 System.out.println("Получена некорректная команда");
         }
+
+        scanner.close();
     }
 
     /**
@@ -156,12 +164,14 @@ public class SwitchTasks {
             case "/":
                 if (secondNumber == 0) {
                     System.out.print("Деление на ноль недопустимо");
+                    return;
                 }
-
                 System.out.print("Результат деления двух чисел равен " + (firstNumber / secondNumber));
                 break;
             default:
                 System.out.print("Введена некорректная операция");
         }
+
+        scanner.close();
     }
 }

@@ -9,7 +9,7 @@ public class BreakContinueTasks {
         //skipMultiplesOfThree();
 
         //Проверка работы метода вывода только положительных чисел
-        //printPositiveNumbers();
+        printPositiveNumbers();
 
         //Проверка работы метода ввода строк до команды "stop"
         //readLinesUntilStop();
@@ -29,6 +29,7 @@ public class BreakContinueTasks {
             number = scanner.nextInt();
 
             if (number < 0) {
+                sum += number;
                 System.out.println("Выполнение программы завершено!");
                 break;
             }
@@ -36,9 +37,9 @@ public class BreakContinueTasks {
             sum += number;
         }
 
-        if (sum > 0) {
             System.out.println("Сумма чисел равна " + sum);
-        }
+
+        scanner.close();
     }
 
     /**
@@ -67,13 +68,17 @@ public class BreakContinueTasks {
             number = scanner.nextInt();
             if (number < 0) {
                 continue;
-            } else if (number == 0) {
+            }
+
+            if (number == 0) {
                 System.out.print("Выполнение программы завершено!");
                 break;
             }
 
             System.out.println(number);
         }
+
+        scanner.close();
     }
 
     /**
@@ -92,5 +97,7 @@ public class BreakContinueTasks {
                 break;
             }
         }
+
+        scanner.close();
     }
 }

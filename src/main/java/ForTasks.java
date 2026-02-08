@@ -12,7 +12,7 @@ public class ForTasks {
         //printMultiplicationTable();
 
         //Проверка работы метода на простое число
-        //isPrime();
+        isPrime();
 
         //Проверка работы метода вывода чисел от 1 до 10
         //printNumbers();
@@ -45,6 +45,8 @@ public class ForTasks {
         }
 
         System.out.print("Сумма чисел равна: " + sum);
+
+        scanner.close();
     }
 
     /**
@@ -59,6 +61,8 @@ public class ForTasks {
         for (int i = 1; i <= 10; i++) {
             System.out.println(number + " x " + i + " = " + number*i);
         }
+
+        scanner.close();
     }
 
     /**
@@ -71,17 +75,23 @@ public class ForTasks {
         int number = scanner.nextInt();
         boolean isPrime = true;
 
-        for (int i = 2; i <= number - 1; i++) {
+        if (number == 1) {
+            System.out.print("Передано число 1. Оно не является ни простым, ни составным числом!");
+        }
+
+        for (int i = 2; i * i <= number; i++) {
             if (number % i == 0) {
                 isPrime = false;
-                System.out.print("Передано сложное число");
+                System.out.print("Передано составное число");
                 break;
             }
         }
 
-        if (isPrime) {
+        if (isPrime && number != 1) {
             System.out.print("Передано простое число");
         }
+
+        scanner.close();
     }
 
     /**

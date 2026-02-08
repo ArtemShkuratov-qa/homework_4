@@ -6,7 +6,7 @@ public class IfElseTasks {
         //getSign();
 
         //Проверка метода поиска наибольшего из двух чисел
-        //getMax();
+        getMax();
 
         //Проверка метода вывода оценки
         //getRating();
@@ -38,6 +38,8 @@ public class IfElseTasks {
         } else {
             System.out.println("Число равно нулю");
         }
+
+        scanner.close();
     }
 
     /**
@@ -59,6 +61,8 @@ public class IfElseTasks {
         } else {
             System.out.print("Числа равны");
         }
+
+        scanner.close();
     }
 
     /**
@@ -81,6 +85,8 @@ public class IfElseTasks {
         } else {
             System.out.print("Введена некорректная оценка");
         }
+
+        scanner.close();
     }
 
     /**
@@ -97,6 +103,8 @@ public class IfElseTasks {
         } else {
             System.out.print("Число нечетное");
         }
+
+        scanner.close();
     }
 
     /**
@@ -115,6 +123,8 @@ public class IfElseTasks {
         } else {
             System.out.print("Скидка отсутвует");
         }
+
+        scanner.close();
     }
 
     /**
@@ -138,5 +148,6 @@ public class IfElseTasks {
             System.out.print("Введено некорректное количество баллов");
         }
 
+        scanner.close();
     }
 }

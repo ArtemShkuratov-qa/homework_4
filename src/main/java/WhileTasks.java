@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class WhileTasks {
     static void main(String[] args) {
         //Проверка работы метода вычисления факториала
-        //getFactorial();
+        getFactorial();
 
         //Проверка работы метода вывода всех четных чисел до заданного
         //printEvenNumbers();
@@ -30,6 +30,8 @@ public class WhileTasks {
         }
 
         System.out.println("Факториал числа " + number + " равен " + result);
+
+        scanner.close();
     }
 
     /**
@@ -48,6 +50,8 @@ public class WhileTasks {
             }
             i++;
         }
+
+        scanner.close();
     }
 
     /**
@@ -65,5 +69,6 @@ public class WhileTasks {
             number--;
         }
 
+        scanner.close();
     }
 }

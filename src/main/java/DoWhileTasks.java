@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class DoWhileTasks {
     static void main(String[] args) {
         //Проверка метода запроса положительного числа
-        //readPositiveNumber();
+        readPositiveNumber();
 
         //Проверка метода проверки пароля
         //checkPassword();
@@ -31,6 +31,8 @@ public class DoWhileTasks {
             System.out.print("Введите число: ");
             number = scanner.nextInt();
         } while (number <= 0);
+
+        scanner.close();
     }
 
     /**
@@ -46,6 +48,8 @@ public class DoWhileTasks {
             System.out.print("Введите пароль: ");
             userPassword = scanner.nextLine();
         } while (!userPassword.equals(systemPassword));
+
+        scanner.close();
     }
 
     /**
@@ -74,6 +78,8 @@ public class DoWhileTasks {
         } while (!userCommand.equals("exit"));
 
         System.out.print("Работа программы завершена!");
+
+        scanner.close();
     }
 
     /**
@@ -92,6 +98,8 @@ public class DoWhileTasks {
         } while (number > 0);
 
         System.out.print("Количество цифр равно " + count);
+
+        scanner.close();
     }
 
 }
