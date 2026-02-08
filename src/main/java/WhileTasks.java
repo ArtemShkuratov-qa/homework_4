@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class WhileTasks {
     static void main(String[] args) {
         //Проверка работы метода вычисления факториала
-        getFactorial();
+        //getFactorial();
 
         //Проверка работы метода вывода всех четных чисел до заданного
         //printEvenNumbers();

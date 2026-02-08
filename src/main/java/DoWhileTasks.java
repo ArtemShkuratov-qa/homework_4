@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class DoWhileTasks {
     static void main(String[] args) {
         //Проверка метода запроса положительного числа
-        readPositiveNumber();
+        //readPositiveNumber();
 
         //Проверка метода проверки пароля
         //checkPassword();

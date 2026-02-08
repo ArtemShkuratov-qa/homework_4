@@ -12,7 +12,7 @@ public class ForTasks {
         //printMultiplicationTable();
 
         //Проверка работы метода на простое число
-        isPrime();
+        //isPrime();
 
         //Проверка работы метода вывода чисел от 1 до 10
         //printNumbers();

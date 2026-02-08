@@ -6,7 +6,7 @@ public class IfElseTasks {
         //getSign();
 
         //Проверка метода поиска наибольшего из двух чисел
-        getMax();
+        //getMax();
 
         //Проверка метода вывода оценки
         //getRating();

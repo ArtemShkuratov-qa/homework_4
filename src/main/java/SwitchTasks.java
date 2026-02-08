@@ -15,7 +15,7 @@ public class SwitchTasks {
         //printSystemStatus();
 
         //Проверка метода простой калькуляции
-        printResult();
+        //printResult();
     }
 
     /**

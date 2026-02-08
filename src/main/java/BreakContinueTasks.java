@@ -9,7 +9,7 @@ public class BreakContinueTasks {
         //skipMultiplesOfThree();
 
         //Проверка работы метода вывода только положительных чисел
-        printPositiveNumbers();
+        //printPositiveNumbers();
 
         //Проверка работы метода ввода строк до команды "stop"
         //readLinesUntilStop();
